@@ -58,7 +58,7 @@ Verify installation by using command 'minikube status' , If Minikube is running 
 
 ### 6. Install Helm
 
-1. # In the Ubuntu terminal, download and install Helm using the official script:
+. In the Ubuntu terminal, download and install Helm using the official script:
  - curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
  - chmod +x get_helm.sh
  - ./get_helm.sh
@@ -69,13 +69,23 @@ for installing istio refer - https://istio.io/latest/docs/setup/getting-started/
 
 That's it! You now have a Kubernetes development environment with WSL, Ubuntu, Docker, Minikube, and Helm set up on your Windows machine. You can use this environment to develop and manage applications using containers and Kubernetes.
 
-For more information and documentation:
+### Note:
 
-- WSL: https://docs.microsoft.com/en-us/windows/wsl/
-- Docker Desktop: https://www.docker.com/products/docker-desktop
-- Minikube: https://minikube.sigs.k8s.io/docs/start/
-- Kubernetes: https://kubernetes.io/docs/setup/
-- Helm: https://helm.sh/docs/intro/
+Please note that the steps provided in this are based on the information available at the time of creation and may be subject to change. Software versions, installation procedures, and dependencies might be updated by the respective projects.
+
+For the most up-to-date and accurate information, always refer to the official documentation of each tool or project:
+
+- Windows Subsystem for Linux (WSL): [Official Documentation](https://docs.microsoft.com/en-us/windows/wsl/)
+- Docker Desktop: [Official Documentation](https://www.docker.com/products/docker-desktop)
+- Minikube: [Official Documentation](https://minikube.sigs.k8s.io/docs/start/)
+- Kubernetes: [Official Documentation](https://kubernetes.io/docs/setup/)
+- Helm: [Official Documentation](https://helm.sh/docs/intro/)
+
+Before proceeding with the installation or troubleshooting, check the official documentation to ensure you have the latest information and avoid any potential errors.
+
+If you encounter any issues or have questions regarding the setup, feel free to reach out to the respective communities or support channels for assistance. you can reach me on nusairtech@gmail.com .
+
+Happy Kubernetes development!
 
 
 
