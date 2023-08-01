@@ -39,32 +39,32 @@ Note: Docker Desktop will manage the containers for Minikube, allowing you to ru
 
 1. Open the Ubuntu terminal.
 
-2. Install kubectl, which is a command-line tool for interacting with Kubernetes by following commands:
+2. # Install kubectl, which is a command-line tool for interacting with Kubernetes by following commands:
   sudo apt update
   sudo apt install -y kubectl
 
-3. Install Minikube by downloading the binary and setting it up in your system's PATH:
-   curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-   chmod +x minikube-linux-amd64
-   sudo mv minikube-linux-amd64 /usr/local/bin/minikube
+3. # Install Minikube
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+chmod +x minikube-linux-amd64
+sudo mv minikube-linux-amd64 /usr/local/bin/minikube
 
 ### 5. Start Minikube
 
 1. In the Ubuntu terminal, start Minikube using the docker driver:
-   minikube start --driver=docker 
+
+  ' minikube start --driver=docker '
+   
 Verify installation by using command [minikube status] If Minikube is running correctly, you should see information about the Minikube cluster, such as the Kubernetes version and control plane status.
 
 
 ### 6. Install Helm
 
-1. In the Ubuntu terminal, download and install Helm using the official script:
+1. # In the Ubuntu terminal, download and install Helm using the official script:
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
 chmod +x get_helm.sh
 ./get_helm.sh
 
-2. Verify the Helm installation by:
-helm version
-
+Verify the Helm installation by: 'helm version'
 
 for installing istio refer - https://istio.io/latest/docs/setup/getting-started/
 
