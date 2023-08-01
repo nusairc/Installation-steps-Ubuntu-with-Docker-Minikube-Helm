@@ -35,34 +35,33 @@ This guide will walk you through the process of setting up a development environ
 Note: Docker Desktop will manage the containers for Minikube, allowing you to run a Kubernetes cluster within your Ubuntu WSL environment while utilizing Docker's capabilities on your Windows machine. This integration ensures seamless container management for Minikube 
 
 
-### 4. Install Minikube
+### 4. Install Minikube and Kubectl
 
 1. Open the Ubuntu terminal.
 
-2. # Install kubectl, which is a command-line tool for interacting with Kubernetes by following commands:
-  sudo apt update
-  sudo apt install -y kubectl
+2. Install kubectl, which is a command-line tool for interacting with Kubernetes by following commands:
+  - sudo apt update
+  - sudo apt install -y kubectl
 
-3. # Install Minikube
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-chmod +x minikube-linux-amd64
-sudo mv minikube-linux-amd64 /usr/local/bin/minikube
+3. install minikube
+- curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+- chmod +x minikube-linux-amd64
+- sudo mv minikube-linux-amd64 /usr/local/bin/minikube
 
 ### 5. Start Minikube
 
-1. In the Ubuntu terminal, start Minikube using the docker driver:
-
-  ' minikube start --driver=docker '
+ In the Ubuntu terminal, start Minikube using the docker driver:  --if you are using virtual-box set driver as virtaulbox-- here we use docker. refer offical docs for more.
+ 
+  - minikube start --driver=docker 
    
-Verify installation by using command [minikube status] If Minikube is running correctly, you should see information about the Minikube cluster, such as the Kubernetes version and control plane status.
-
+Verify installation by using command 'minikube status' , If Minikube is running correctly, you should see information about the Minikube cluster, such as the Kubernetes version and control plane status.
 
 ### 6. Install Helm
 
 1. # In the Ubuntu terminal, download and install Helm using the official script:
-curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
-chmod +x get_helm.sh
-./get_helm.sh
+ - curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+ - chmod +x get_helm.sh
+ - ./get_helm.sh
 
 Verify the Helm installation by: 'helm version'
 
