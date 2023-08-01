@@ -1,7 +1,7 @@
 
-# Installing WSL, Ubuntu, Docker, Minikube, Kubernetes, and Helm on Windows
+# Installing WSL - Ubuntu, Docker, Minikube, Kubernetes, and Helm on Windows
 
-This guide will walk you through the process of setting up a development environment on Windows, including Windows Subsystem for Linux (WSL) with Ubuntu, Docker, Minikube, Kubernetes, and Helm. These tools are commonly used for containerization and Kubernetes cluster management.
+This guide will walk you through the process of setting up a development environment on Windows, including Windows Subsystem for Linux (WSL) with Ubuntu, Docker, Minikube, Kubernetes, and Helm. These tools are commonly used for containerization and Kubernetes cluster management. also included reference link for istio installation.
 
 ## Prerequisites
 
@@ -66,7 +66,7 @@ chmod +x get_helm.sh
 helm version
 
 
-
+for installing istio refer - https://istio.io/latest/docs/setup/getting-started/
 
 That's it! You now have a Kubernetes development environment with WSL, Ubuntu, Docker, Minikube, and Helm set up on your Windows machine. You can use this environment to develop and manage applications using containers and Kubernetes.
 
@@ -77,6 +77,8 @@ For more information and documentation:
 - Minikube: https://minikube.sigs.k8s.io/docs/start/
 - Kubernetes: https://kubernetes.io/docs/setup/
 - Helm: https://helm.sh/docs/intro/
+
+
 
 
 
